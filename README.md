@@ -1,7 +1,7 @@
 # NFSC-GetChallengeSeriesRaceHash
 此 ASI 插件用于获取 Need for Speed Carbon 挑战赛哈希值<br>
 
-编译完成的 ASI 已在 Release 发布，您可以直接下载并使用<br>
+编译完成的 ASI 已在 Release 发布，您需要先安装 Ultimate ASI Loader 才可使用它<br>
 将下载好的 GetChallengeSeriesRaceHash.asi 放置游戏目录下的 Scripts 文件夹中<br>
 启动游戏，进入挑战赛界面<br>
 此时控制台将会输出所有挑战赛的哈希值<br>
