@@ -6,12 +6,14 @@
 启动游戏，进入挑战赛界面<br>
 此时控制台将会输出所有挑战赛的哈希值<br>
 
-如果您需要单独列出某个挑战赛的哈希值，请依照以下方式查找它的索引：<br>
+如果您需要单独列出某个挑战赛的哈希值，则需要对代码进行修改，以下为具体步骤：<br>
+
+您需先找出要查找哈希值挑战赛的索引，请依照以下方式查找它的索引：<br>
 1. 使用 VltEd 或 OGVI 读取游戏<br>
 2. 依次展开至：gameplay>baseelement>activity>progression>race_bin>race_bin_challenge 节点<br>
 3. 在 race_bin_challenge 节点中，展开 WorldRaces 字段<br>
 4. 左边的字段数即为索引<br>
-需要注意的是，第一场挑战赛从字段 [0] 开始<br>
+需要注意的是，第一场挑战赛从字段 [0] 开始，而不是字段 [1] <br>
 
 随后修改代码，将<br>
 
@@ -25,4 +27,4 @@ const int TARGET_CHALLENGE_INDEX = 0;<br>
     // printf("索引为 %d 的挑战赛哈希值: 0x%X ---\n", BinIndex, *EventHash);<br>
 // }<br>
 
-编译，随后将 .asi 放置到游戏目录 Scripts 中即可获取指定索引挑战赛的哈希值<br>
+使用 Release & x86 编译，随后将 .asi 放置到游戏目录 Scripts 中即可获取指定索引挑战赛的哈希值<br>
